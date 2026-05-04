@@ -6,8 +6,8 @@ export default async function handler(req, res) {
   const { plan } = req.body;
 
   const prices = {
-    "3day": "YOUR_PRICE_ID_1",
-    "lifetime": "YOUR_PRICE_ID_2"
+    "3day": "prod_USC1IxaHSDLdeE",
+    "lifetime": "prod_USC37zTvYNcqSs"
   };
 
   const session = await stripe.checkout.sessions.create({
